@@ -4,9 +4,9 @@ static int	has_empty_rows(char **matrix);
 static int	has_empty_columns(char **matrix);
 
 /**
- * The function "check_empty" checks if a matrix has empty rows, empty columns, or
- * both, and exits the program with an error message if any of these conditions are
- * met.
+ * The function "check_empty" checks if a matrix has empty rows, empty columns,
+ * or both, and exits the program with an error message if any of these 
+ * conditions are met.
  *
  * @param map_file A pointer to a structure of type `t_map_file`.
  */

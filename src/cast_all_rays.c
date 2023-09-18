@@ -3,14 +3,12 @@
 /*                                                        :::      ::::::::   */
 /*   cast_all_rays.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lbatista <lbatista@student.42sp.org.br>    +#+  +:+       +#+        */
+/*   By: mvavasso <mvavasso@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/15 13:10:16 by lbatista          #+#    #+#             */
-/*   Updated: 2023/09/17 20:53:55 by lbatista         ###   ########.fr       */
+/*   Updated: 2023/09/18 23:11:18 by mvavasso         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-
 
 #include "../inc/cub3D.h"
 

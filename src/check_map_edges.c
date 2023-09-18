@@ -13,8 +13,8 @@ static int	is_edge(t_map_file *map_file, t_coor last, t_coor pos);
 /**
  * The function checks if the edges of a map are closed.
  *
- * @param map_file A pointer to a structure of type `t_map_file` which represents a
- * map file.
+ * @param map_file A pointer to a structure of type `t_map_file` which
+ * represents a map file.
  */
 void	check_map_edges(t_map_file *map_file)
 {
@@ -35,9 +35,9 @@ void	check_map_edges(t_map_file *map_file)
  * @param map_file A pointer to a structure of type `t_map_file`, which contains
  * information about a map file. This structure likely includes fields such as
  * `matrix`, `height`, and `width`.
- * @param start The parameter "start" is a pointer to a structure of type "t_coor".
- * This structure likely contains two integer fields, "x" and "y", which represent
- * the coordinates of a point in a two-dimensional matrix.
+ * @param start The parameter "start" is a pointer to a structure of type 
+ * "t_coor". This structure likely contains two integer fields, "x" and "y",
+ * which represent the coordinates of a point in a two-dimensional matrix.
  *
  * @return nothing (void).
  */
@@ -70,14 +70,14 @@ static void	set_start_point(t_map_file *map_file, t_coor *start)
  * The function checks if a given position in a map is closed, meaning it is
  * surrounded by walls or previously visited positions.
  *
- * @param map_file A pointer to a structure representing a map file. This structure
- * likely contains information about the map, such as its dimensions and the matrix
- * representing the map itself.
+ * @param map_file A pointer to a structure representing a map file. This
+ * structure likely contains information about the map, such as its dimensions
+ * and the matrix representing the map itself.
  * @param start The start parameter is of type t_coor and represents the starting
  * coordinates of the current path being checked.
  * @param last The parameter "last" is of type t_coor, which represents a
- * coordinate on a map. It is used to keep track of the previous coordinate visited
- * during the recursive function call.
+ * coordinate on a map. It is used to keep track of the previous coordinate
+ * visited during the recursive function call.
  * @param current The current coordinate in the map matrix that we are checking.
  *
  * @return an integer value.
@@ -131,9 +131,9 @@ static void	set_cardinals(t_coor cardinals[4], t_coor pos)
  * @param last The parameter "last" is of type t_coor, which likely represents a
  * coordinate on a map. It is used to store the previous position before checking
  * if the current position is an edge.
- * @param pos The variable "pos" represents the current position in the map. It is
- * of type "t_coor", which is a structure that contains the x and y coordinates of
- * a point on the map.
+ * @param pos The variable "pos" represents the current position in the map.
+ * It is of type "t_coor", which is a structure that contains the x and y
+ * coordinates of a point on the map.
  *
  * @return an integer value.
  */

@@ -24,8 +24,9 @@ void	render(t_data *data)
  * wall in a 3D projection and then draws the ceiling, wall, and floor.
  *
  * @param data A pointer to a struct that contains various data related to the
- * game, such as the player's position and rotation, the distance to the projection
- * plane, and an array of rays that represent the player's field of view.
+ * game, such as the player's position and rotation, the distance to the
+ * projection plane, and an array of rays that represent the player's field
+ * of view.
  */
 static void	render_wall_projection(t_data *data)
 {
@@ -59,8 +60,8 @@ static void	render_wall_projection(t_data *data)
  * The function "draw_ceil" is responsible for drawing the ceiling of a wall on a
  * canvas.
  *
- * @param data A pointer to a structure of type t_data, which contains information
- * about the canvas and the colors to be used for drawing.
+ * @param data A pointer to a structure of type t_data, which contains
+ * information about the canvas and the colors to be used for drawing.
  * @param wall The `wall` parameter is a pointer to a `t_wall` struct.
  * @param x The parameter "x" represents the x-coordinate of the current pixel
  * being drawn on the canvas.
@@ -81,8 +82,8 @@ static void	draw_ceil(t_data *data, t_wall *wall, int x)
  * The function `draw_wall` is responsible for drawing a wall on the canvas based
  * on the given data and wall parameters.
  *
- * @param data A pointer to a struct that contains various data needed for drawing
- * the wall, such as the rays and textures.
+ * @param data A pointer to a struct that contains various data needed for
+ * drawing the wall, such as the rays and textures.
  * @param wall A structure that contains information about the wall being drawn,
  * such as its top and bottom y-coordinates, height, and texture.
  * @param x The parameter `x` represents the x-coordinate of the column of pixels

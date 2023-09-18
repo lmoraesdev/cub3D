@@ -6,7 +6,8 @@
  * @param angle The angle parameter is a float value representing the angle in
  * radians.
  *
- * @return a boolean value indicating whether the given angle is facing downwards.
+ * @return a boolean value indicating whether the given angle is facing
+ * downwards.
  */
 int	is_ray_facing_down(float angle)
 {
@@ -30,7 +31,8 @@ int	is_ray_facing_up(float angle)
  * The function determines if a ray is facing to the right based on the given
  * angle.
  *
- * @param angle The angle parameter represents the angle at which a ray is facing.
+ * @param angle The angle parameter represents the angle at which a ray is
+ * facing.
  *
  * @return a boolean value indicating whether the ray is facing right or not.
  */
@@ -40,11 +42,11 @@ int	is_ray_facing_right(float angle)
 }
 
 /**
- * The function is_ray_facing_left determines if a ray is facing left based on the
- * given angle.
+ * The function is_ray_facing_left determines if a ray is facing left based on
+ * the given angle.
  *
- * @param angle The angle parameter is a float value representing the direction in
- * which the ray is facing.
+ * @param angle The angle parameter is a float value representing the direction
+ * in which the ray is facing.
  *
  * @return the result of the expression "!is_ray_facing_right(angle)".
  */

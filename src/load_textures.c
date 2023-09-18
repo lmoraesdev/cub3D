@@ -6,9 +6,9 @@ static void	add_texture(t_map_file *map_file, char **tex);
 static int	has_all_textures(t_map_file *map_file);
 
 /**
- * The function "load_textures" checks if all the textures in a map file are valid
- * and adds them to the map file if they are. If any textures are missing or
- * invalid, it exits with an error message.
+ * The function "load_textures" checks if all the textures in a map file are
+ * valid and adds them to the map file if they are. If any textures are missing
+ * or invalid, it exits with an error message.
  *
  * @param map_file A pointer to a structure representing a map file.
  */
@@ -35,8 +35,8 @@ void	load_textures(t_map_file *map_file)
 }
 
 /**
- * The function checks if the given content represents a texture by checking if the
- * first non-space character is one of the specified characters.
+ * The function checks if the given content represents a texture by checking if
+ * the first non-space character is one of the specified characters.
  *
  * @param content The parameter "content" is a pointer to a character array
  * (string) that represents the content to be checked.
@@ -62,12 +62,12 @@ static int	is_texture(char *content)
 }
 
 /**
- * The function "add_all_textures" checks if the given texture definition is valid
- * and adds it to the map file.
+ * The function "add_all_textures" checks if the given texture definition is
+ * valid and adds it to the map file.
  *
  * @param map_file A pointer to a structure of type `t_map_file`.
- * @param content The `content` parameter is a string that contains the information
- * about the textures in the map file.
+ * @param content The `content` parameter is a string that contains the
+ * information about the textures in the map file.
  */
 static void	add_all_textures(t_map_file *map_file, char *content)
 {
@@ -95,9 +95,9 @@ static void	add_all_textures(t_map_file *map_file, char *content)
 }
 
 /**
- * The function `add_texture` assigns texture paths or colors to the corresponding
- * fields in the `map_file` structure, and throws an error if an invalid texture is
- * encountered.
+ * The function `add_texture` assigns texture paths or colors to the
+ * corresponding fields in the `map_file` structure, and throws an error
+ * if an invalid texture is encountered.
  *
  * @param map_file A pointer to a structure of type `t_map_file`, which contains
  * various fields related to a map file.
@@ -133,8 +133,8 @@ static void	add_texture(t_map_file *map_file, char **tex)
  *
  * @param map_file A pointer to a structure of type `t_map_file`.
  *
- * @return a boolean value indicating whether all the required textures and colors
- * have been assigned in the given `map_file` structure.
+ * @return a boolean value indicating whether all the required textures and
+ * colors have been assigned in the given `map_file` structure.
  */
 static int	has_all_textures(t_map_file *map_file)
 {

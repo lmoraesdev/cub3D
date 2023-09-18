@@ -1,3 +1,5 @@
+// colocar header
+
 #include "../inc/cub3D.h"
 
 /**

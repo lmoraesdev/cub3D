@@ -34,8 +34,8 @@ int	free_data(t_data *data)
 }
 
 /**
- * The function "free_textures" frees the memory allocated for textures in a given
- * data structure.
+ * The function "free_textures" frees the memory allocated for textures in a
+ * given data structure.
  *
  * @param data A pointer to a struct of type t_data, which contains information
  * about the textures and the mlx (MiniLibX) instance.

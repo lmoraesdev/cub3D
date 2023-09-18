@@ -4,8 +4,8 @@
  * The function checks if a given character is present in a given set of
  * characters.
  *
- * @param c The parameter "c" is a character that we want to check if it is in the
- * set.
+ * @param c The parameter "c" is a character that we want to check if it is in
+ * the set.
  * @param set The parameter "set" is a pointer to a character array.
  *
  * @return The function is_in_set is returning an integer value. It returns 1 if

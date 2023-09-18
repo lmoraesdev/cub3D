@@ -19,16 +19,16 @@ void	key_hook(t_data *data)
 }
 
 /**
- * The function "key_pressed" updates the player's movement direction based on the
- * key code received.
+ * The function "key_pressed" updates the player's movement direction based on
+ * the key code received.
  *
  * @param key_code The key code parameter represents the code of the key that was
  * pressed on the keyboard. It is an integer value that corresponds to a specific
  * key on the keyboard.
  * @param data The parameter "data" is a pointer to a structure of type "t_data".
- * This structure likely contains various data related to the game or program that
- * this function is a part of. The function is using this parameter to access and
- * modify the "player" field within the "data" structure.
+ * This structure likely contains various data related to the game or program
+ * that this function is a part of. The function is using this parameter to
+ * access and modify the "player" field within the "data" structure.
  *
  * @return an integer value of 0.
  */
@@ -56,8 +56,8 @@ static int	key_pressed(int key_code, t_data *data)
  * released key code.
  *
  * @param key_code The key code is an integer value that represents the key that
- * was released. It is used to determine which action should be taken based on the
- * released key.
+ * was released. It is used to determine which action should be taken based on
+ * the released key.
  * @param data The parameter `data` is a pointer to a `t_data` struct.
  *
  * @return an integer value of 0.

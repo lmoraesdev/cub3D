@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: lbatista <lbatista@student.42sp.org.br>    +#+  +:+       +#+         #
+#    By: mvavasso <mvavasso@student.42sp.org.br>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/08/07 16:04:57 by lbatista          #+#    #+#              #
-#    Updated: 2023/09/15 13:18:03 by lbatista         ###   ########.fr        #
+#    Updated: 2023/09/18 23:47:48 by mvavasso         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -87,17 +87,17 @@ AR				=	ar rcs
 all:		$(NAME)
 
 $(OBJ)/%.o:	$(SRC)/%.c
-			mkdir -p $(@D)
-			$(CC) $(CFLAGS) $(INCS) -c $< -o $@
+		@mkdir -p $(@D)
+		@$(CC) $(CFLAGS) $(INCS) -c $< -o $@
 
 $(NAME):	$(OBJS)
-			$(AR) $(NAME) $(OBJ)/*.o
+		@$(AR) $(NAME) $(OBJ)/*.o
 
 clean:
-			$(RM) $(OBJ)
+		@$(RM) $(OBJ)
 
 fclean:		clean
-			$(RM) $(NAME)
+			@$(RM) $(NAME)
 
 re:			fclean all
 

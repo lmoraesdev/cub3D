@@ -52,8 +52,8 @@ static int	get_map_width(char **map)
  * number of rows in a 2D array.
  *
  * @param map The parameter `map` is a pointer to a pointer to a character. It
- * represents a 2D array of characters, where each element is a string. The end of
- * the array is marked by a NULL pointer.
+ * represents a 2D array of characters, where each element is a string. The end
+ * of the array is marked by a NULL pointer.
  *
  * @return the height of the map, which is an integer value.
  */

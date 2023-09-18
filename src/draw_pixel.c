@@ -1,19 +1,21 @@
+// colocar header
+
 #include "../inc/cub3D.h"
 
 /**
  * The function "draw_pixel" is used to set the color of a pixel in an image.
  *
- * @param img The parameter `img` is a pointer to a structure of type `t_img`. This
- * structure likely contains information about an image, such as its size, color
- * depth, and pixel data.
- * @param x The x parameter represents the x-coordinate of the pixel to be drawn on
- * the image.
+ * @param img The parameter `img` is a pointer to a structure of type `t_img`. 
+ * This structure likely contains information about an image, such as its size, 
+ * color depth, and pixel data.
+ * @param x The x parameter represents the x-coordinate of the pixel to be drawn
+ * on the image.
  * @param y The parameter "y" represents the y-coordinate of the pixel in the
  * image. It determines the row in which the pixel will be drawn.
- * @param color The "color" parameter is an integer value that represents the color
- * of the pixel. It typically follows the RGBA format, where the most significant
- * byte represents the alpha channel, followed by the red, green, and blue
- * channels.
+ * @param color The "color" parameter is an integer value that represents the
+ * color of the pixel. It typically follows the RGBA format, where the most 
+ * significant byte represents the alpha channel, followed by the red, 
+ * green, and blue channels.
  */
 void	draw_pixel(t_img *img, int x, int y, int color)
 {

@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: lbatista <lbatista@student.42sp.org.br>    +#+  +:+       +#+         #
+#    By: mvavasso <mvavasso@student.42sp.org.br>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/09/15 13:20:49 by lbatista          #+#    #+#              #
-#    Updated: 2023/09/15 13:21:06 by lbatista         ###   ########.fr        #
+#    Updated: 2023/09/19 00:09:57 by mvavasso         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -69,20 +69,33 @@ CFLAGS				=	-g -Wall -Wextra -Werror
 all: $(NAME)
 
 $(NAME): $(OBJ_FILES)
-	make all -C $(LIBFT_DIR)
-	$(CC) $(CFLAGS) $(OBJ_FILES) $(LIBS) $(LIBFT_INC) -o $(NAME)
+	@make all -C $(LIBFT_DIR)
+	@$(CC) $(CFLAGS) $(OBJ_FILES) $(LIBS) $(LIBFT_INC) -o $(NAME)
+	@ echo -e '\033[0;32m[SUCCESS]\033[0m Compilation done!'
 
 $(OBJ_DIR)/%.o: $(SRC_DIR)/%.c
-	mkdir -p $(@D)
-	$(CC) $(CFLAGS) $(LIBFT_INC) -c $< -o $@
+	@mkdir -p $(@D)
+	@$(CC) $(CFLAGS) $(LIBFT_INC) -c $< -o $@
 
 clean:
-	rm -rf $(OBJ_DIR)
-	make $@ -C $(LIBFT_DIR)
+	@rm -rf $(OBJ_DIR)
+	@make $@ -C $(LIBFT_DIR)
+	@ echo -e '\033[0;33mObjects removed\033[0m'
 
 fclean: clean
-	rm -f $(NAME)
-	make $@ -C $(LIBFT_DIR)
+	@rm -f $(NAME)
+	@make $@ -C $(LIBFT_DIR)
+	@ echo -e '\033[0;33mEverything is clean\033[0m'
+
+valgrind:
+			@echo "$(WHT)Removing old log.$(EOC)"
+			@rm -f valgrind-out.txt
+			@echo "$(WHT)Old log removed.$(EOC)"
+			@echo "$(WHT)Executing Valgrind.$(EOC)"
+			@valgrind --leak-check=full --show-leak-kinds=reachable --track-origins=yes \
+			--log-file=valgrind-out.txt \
+			./cub3D maps/teste.cub
+			@echo "$(GREEN)Valgrind-log created.$(EOC)"
 
 re: fclean all
 

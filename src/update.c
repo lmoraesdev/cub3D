@@ -3,7 +3,8 @@
 static void	update_player(t_data *data);
 
 /**
- * The update function updates the player's position and casts rays for raycasting.
+ * The update function updates the player's position and casts rays for
+ * raycasting.
  *
  * @param data The parameter "data" is a pointer to a structure of type "t_data".
  */

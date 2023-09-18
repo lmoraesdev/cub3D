@@ -36,8 +36,8 @@ void	check_color(t_map_file *map_file, char **tex)
  *
  * @param tex A pointer to an array of strings (char pointers).
  *
- * @return The function does not have a return statement, so it does not explicitly
- * return anything.
+ * @return The function does not have a return statement, so it does not 
+ * explicitly return anything.
  */
 static void	join_colors(char **tex)
 {
@@ -64,8 +64,8 @@ static void	join_colors(char **tex)
 /**
  * The function checks if a given string represents a valid RGB color value.
  *
- * @param rgb The parameter `rgb` is a pointer to a character array that represents
- * an RGB color value.
+ * @param rgb The parameter `rgb` is a pointer to a character array that 
+ * represents an RGB color value.
  *
  * @return an integer value.
  */

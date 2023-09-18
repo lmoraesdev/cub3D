@@ -6,9 +6,9 @@ static int	rgb2int(int r, int g, int b);
  * The function `get_color` takes a string representing an RGB color and returns
  * the corresponding integer value.
  *
- * @param texture A string representing the texture color in RGB format. The format
- * should be "R,G,B" where R, G, and B are integers representing the red, green,
- * and blue color values respectively.
+ * @param texture A string representing the texture color in RGB format. The
+ * format should be "R,G,B" where R, G, and B are integers representing the red,
+ * green, and blue color values respectively.
  *
  * @return an integer value, which represents the color.
  */
@@ -43,12 +43,12 @@ int	get_color(char *texture)
  * and blue components of a color and returns a single integer value representing
  * the combined color.
  *
- * @param r The parameter "r" represents the value of the red component in the RGB
- * color model. It should be an integer between 0 and 255, inclusive.
+ * @param r The parameter "r" represents the value of the red component in the
+ * RGB color model. It should be an integer between 0 and 255, inclusive.
  * @param g The parameter "g" in the above code represents the value of the green
  * component in an RGB color.
- * @param b The parameter "b" in the above code represents the blue component of an
- * RGB color. It is an integer value ranging from 0 to 255, indicating the
+ * @param b The parameter "b" in the above code represents the blue component
+ * of an RGB color. It is an integer value ranging from 0 to 255, indicating the
  * intensity of the blue color in the RGB color model.
  *
  * @return an integer value.

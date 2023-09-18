@@ -36,8 +36,8 @@ void	queue_destroy(t_queue *queue)
  * @param value A pointer to a character array (string) that represents the value
  * to be added to the queue.
  *
- * @return The function does not have a return statement, so it does not explicitly
- * return anything.
+ * @return The function does not have a return statement, so it does not
+ * explicitly return anything.
  */
 void	queue_push(t_queue *queue, char *value)
 {
@@ -66,14 +66,15 @@ void	queue_push(t_queue *queue, char *value)
 }
 
 /**
- * The function `queue_pop` removes the last item from a queue and frees the memory
- * associated with it.
+ * The function `queue_pop` removes the last item from a queue and frees the
+ * memory associated with it.
  *
  * @param queue A pointer to a queue structure (t_queue)
  *
  * @return In the given code, the function `queue_pop` does not explicitly return
  * any value. Instead, it uses the `return;` statement to exit the function early
- * if certain conditions are met. Therefore, the function does not return anything.
+ * if certain conditions are met. Therefore, the function does not return 
+ * anything.
  */
 void	queue_pop(t_queue *queue)
 {

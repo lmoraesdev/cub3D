@@ -1,3 +1,5 @@
+// colocar header
+
 #include "../inc/cub3D.h"
 #include <stddef.h>
 #include <stdlib.h>
@@ -40,15 +42,16 @@ char	**get_matrix_map(t_queue *file_content)
 }
 
 /**
- * The function "make_lines_same_len" pads each line in a queue with spaces to make
- * them all the same length as the longest line in the queue.
+ * The function "make_lines_same_len" pads each line in a queue with spaces to
+ * make them all the same length as the longest line in the queue.
  *
- * @param file_content A pointer to a queue structure that contains the content of
- * a file.
+ * @param file_content A pointer to a queue structure that contains the content
+ * of a file.
  *
- * @return an integer value. If the function is successful, it will return 0. If
- * there is an error, it will return -1.
+ * @return an integer value. If the function is successful, it will return 0. 
+ * If there is an error, it will return -1.
  */
+
 static int	make_lines_same_len(t_queue *file_content)
 {
 	t_queue_item	*tmp;
@@ -70,14 +73,14 @@ static int	make_lines_same_len(t_queue *file_content)
 }
 
 /**
- * The function "get_longest_line_len" returns the length of the longest line in a
- * queue of strings.
- *
- * @param file_content A pointer to a queue structure that contains the content of
- * a file.
- *
- * @return the length of the longest line in the given file content.
- */
+* The function "get_longest_line_len" returns the length of the longest line in a
+* queue of strings.
+*
+* @param file_content A pointer to a queue structure that contains the content of
+* a file.
+*
+* @return the length of the longest line in the given file content.
+*/
 static size_t	get_longest_line_len(t_queue *file_content)
 {
 	t_queue_item	*tmp;
@@ -97,14 +100,16 @@ static size_t	get_longest_line_len(t_queue *file_content)
 }
 
 /**
- * The function "get_padded_line" takes a line of text and pads it with spaces to a
- * specified size.
- *
- * @param line A pointer to a character array representing a line of text.
- * @param size The size parameter represents the desired size of the padded line.
- *
- * @return a pointer to a character array (string) that represents the padded line.
- */
+* The function "get_padded_line" takes a line of text and pads it with spaces 
+* to a specified size.
+*
+* @param line A pointer to a character array representing a line of text.
+* @param size The size parameter represents the desired size of the padded line.
+*
+* @return a pointer to a character array (string) that represents 
+* the padded line.
+*/
+
 static char	*get_padded_line(char *line, size_t size)
 {
 	char	*padded_line;

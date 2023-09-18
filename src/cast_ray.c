@@ -1,3 +1,5 @@
+// colocar header
+
 #include "../inc/cub3D.h"
 
 static void	init_horz_ray(t_data *data, t_raycast *horz, float ray_angle);
@@ -6,17 +8,17 @@ static void	init_vert_ray(t_data *data, t_raycast *vert, float ray_angle);
 static void	cast_vert_ray(t_data *data, t_raycast *vert, float ray_angle);
 
 /**
- * The function `cast_ray` determines whether a vertical or horizontal ray hits a
- * wall first and updates the corresponding ray data.
+ * The function `cast_ray` determines whether a vertical or horizontal 
+ * ray hits a wall first and updates the corresponding ray data.
  *
  * @param data A pointer to a data structure that contains information about the
  * game world and the rays being cast.
- * @param ray_angle The angle at which the ray is cast. It represents the direction
- * in which the ray is traveling.
+ * @param ray_angle The angle at which the ray is cast. It represents the 
+ * direction in which the ray is traveling.
  * @param strip_id The strip_id parameter represents the index of the ray in the
- * data->rays array. It is used to store the information about the ray's properties
- * such as distance, wall hit coordinates, wall texture, and whether it was hit
- * vertically or horizontally.
+ * data->rays array. It is used to store the information about the ray's 
+ * properties such as distance, wall hit coordinates, wall texture, and whether 
+ * it was hit vertically or horizontally.
  */
 void	cast_ray(t_data *data, float ray_angle, int strip_id)
 {
@@ -50,11 +52,12 @@ void	cast_ray(t_data *data, float ray_angle, int strip_id)
  * @param data A pointer to a struct that contains game data, including the
  * player's position.
  * @param horz The parameter `horz` is a pointer to a `t_raycast` struct. This
- * struct contains various properties related to the horizontal raycast, such as
- * the distance to the wall, the coordinates of the wall hit, the wall texture, and
- * the intercept points.
+ * struct contains various properties related to the horizontal raycast, such 
+ * as the distance to the wall, the coordinates of the wall hit, the wall
+ * texture, and the intercept points.
  * @param ray_angle The ray_angle parameter represents the angle at which the ray
- * is being cast. It is used to determine the direction in which the ray is facing.
+ * is being cast. It is used to determine the direction in which the ray is 
+ * facing.
  */
 static void	init_horz_ray(t_data *data, t_raycast *horz, float ray_angle)
 {
@@ -84,12 +87,12 @@ static void	init_horz_ray(t_data *data, t_raycast *horz, float ray_angle)
  *
  * @param data A pointer to a data structure that contains information about the
  * game world and the player's position.
- * @param horz A structure that contains information about the horizontal raycast,
- * such as the coordinates of the wall hit, the distance to the wall, and the
- * texture of the wall.
+ * @param horz A structure that contains information about the horizontal 
+ * raycast, such as the coordinates of the wall hit, the distance to the wall,
+ * and the texture of the wall.
  * @param ray_angle The ray_angle parameter represents the angle at which the ray
- * is being cast. It is used to determine the direction in which the ray is facing
- * and to calculate the coordinates of the next point to check for a wall.
+ * is being cast. It is used to determine the direction in which the ray is 
+ * facing and to calculate the coordinates of the next point to check for a wall.
  */
 static void	cast_horz_ray(t_data *data, t_raycast *horz, float ray_angle)
 {
@@ -154,8 +157,8 @@ static void	init_vert_ray(t_data *data, t_raycast *vert, float ray_angle)
 }
 
 /**
- * The function `cast_vert_ray` calculates the vertical ray intersection with walls
- * in a 2D map.
+ * The function `cast_vert_ray` calculates the vertical ray intersection 
+ * with walls in a 2D map.
  *
  * @param data A pointer to a data structure that contains information about the
  * game state.

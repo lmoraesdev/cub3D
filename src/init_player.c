@@ -13,8 +13,8 @@ static float	get_initial_rotation_angle(char direction);
  * (south), 'E' (east), or 'W' (west).
  * @param grid_y The grid_y parameter represents the y-coordinate of the player's
  * starting position on the grid.
- * @param grid_x The `grid_x` parameter represents the x-coordinate of the player's
- * starting position on a grid.
+ * @param grid_x The `grid_x` parameter represents the x-coordinate of the
+ * player's starting position on a grid.
  */
 void	init_player(t_player *player, char dir, int grid_y, int grid_x)
 {
@@ -37,8 +37,8 @@ void	init_player(t_player *player, char dir, int grid_y, int grid_x)
  * @param direction The direction parameter is a character that represents the
  * cardinal direction (North, South, East, or West).
  *
- * @return a float value, which represents the initial rotation angle based on the
- * given direction.
+ * @return a float value, which represents the initial rotation angle based on
+ * the given direction.
  */
 static float	get_initial_rotation_angle(char direction)
 {

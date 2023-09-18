@@ -6,8 +6,8 @@ static t_img	*get_texture_img(void *mlx, char *filename);
 static void		init_textures(t_data *data, t_map_file *map_file);
 
 /**
- * The function "setup" initializes various variables and structures needed for the
- * program.
+ * The function "setup" initializes various variables and structures needed for
+ * the program.
  *
  * @param data A double pointer to a structure of type t_data. This is used to
  * store various data related to the program.
@@ -67,9 +67,9 @@ static void	init_empty(t_data *data)
  * The function "get_canvas" creates and initializes a new image canvas with a
  * specified width and height.
  *
- * @param mlx The parameter "mlx" is a pointer to the mlx structure, which is used
- * for handling the connection between the program and the graphical display. It is
- * typically obtained by calling the mlx_init() function.
+ * @param mlx The parameter "mlx" is a pointer to the mlx structure, which is
+ * used for handling the connection between the program and the graphical
+ * display. It is typically obtained by calling the mlx_init() function.
  *
  * @return a pointer to a t_img structure.
  */
@@ -89,13 +89,14 @@ static t_img	*get_canvas(void *mlx)
 }
 
 /**
- * The function "get_texture_img" returns a pointer to a texture image loaded from
- * a file.
+ * The function "get_texture_img" returns a pointer to a texture image loaded
+ * from a file.
  *
- * @param mlx The parameter "mlx" is a pointer to the mlx structure, which is used
- * for communication with the X server and managing windows and graphics contexts.
- * @param filename The filename parameter is a string that represents the name or
- * path of the XPM file that contains the texture image.
+ * @param mlx The parameter "mlx" is a pointer to the mlx structure, which is
+ * used for communication with the X server and managing windows and graphics
+ * contexts.
+ * @param filename The filename parameter is a string that represents the name
+ * or path of the XPM file that contains the texture image.
  *
  * @return a pointer to a t_img structure.
  */
@@ -114,11 +115,11 @@ static t_img	*get_texture_img(void *mlx, char *filename)
 }
 
 /**
- * The function initializes textures and colors for a given data structure and map
- * file.
+ * The function initializes textures and colors for a given data structure and
+ * map file.
  *
- * @param data A pointer to a structure of type t_data, which contains information
- * about the game data and textures.
+ * @param data A pointer to a structure of type t_data, which contains
+ * information about the game data and textures.
  * @param map_file A structure that contains information about the map file,
  * including the paths to the texture images (texture_no, texture_so, texture_ea,
  * texture_we), and the colors for the ceiling (ceil_color) and floor

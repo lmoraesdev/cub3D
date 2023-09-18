@@ -5,8 +5,8 @@ static void	set_player_position(t_map_file *map_file);
 static int	is_player_inside_map(char **matrix, int player_y, int player_x);
 
 /**
- * The function "check_player" checks if there is exactly one player on the map and
- * if the player is inside the map.
+ * The function "check_player" checks if there is exactly one player on the
+ * map and if the player is inside the map.
  *
  * @param map_file A pointer to a structure of type `t_map_file`, which contains
  * information about the map and the player.

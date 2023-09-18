@@ -3,8 +3,8 @@
 static int	is_cub_file(char *filename);
 
 /**
- * The function "check_file" checks if a given file is a valid .cub file and if it
- * exists.
+ * The function "check_file" checks if a given file is a valid .cub file 
+ * and if it exists.
  *
  * @param filename A pointer to a string representing the name of a file.
  */
@@ -48,8 +48,8 @@ static int	is_cub_file(char *filename)
  * @param filename A pointer to a string representing the name of the file to
  * check.
  *
- * @return The function is_file returns an integer value. If the file specified by
- * the filename parameter exists and can be opened for reading, the function
+ * @return The function is_file returns an integer value. If the file specified
+ * by the filename parameter exists and can be opened for reading, the function
  * returns 1. Otherwise, if the file does not exist or cannot be opened, the
  * function returns 0.
  */
