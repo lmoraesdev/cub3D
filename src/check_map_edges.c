@@ -35,7 +35,7 @@ void	check_map_edges(t_map_file *map_file)
  * @param map_file A pointer to a structure of type `t_map_file`, which contains
  * information about a map file. This structure likely includes fields such as
  * `matrix`, `height`, and `width`.
- * @param start The parameter "start" is a pointer to a structure of type 
+ * @param start The parameter "start" is a pointer to a structure of type
  * "t_coor". This structure likely contains two integer fields, "x" and "y",
  * which represent the coordinates of a point in a two-dimensional matrix.
  *
@@ -108,6 +108,16 @@ static int	is_closed(
 	return (0);
 }
 
+/**
+ * The function "set_cardinals" sets the coordinates of four cardinal directions
+ * (up, left, down, right) based on a given position.
+ *
+ * @param cardinals An array of t_coor structures representing the cardinal
+ * directions (north, west, south, east).
+ * @param pos The parameter "pos" is a structure of type "t_coor" that represents a
+ * position. It has two members: "y" and "x", which represent the y-coordinate and
+ * x-coordinate of the position, respectively.
+ */
 static void	set_cardinals(t_coor cardinals[4], t_coor pos)
 {
 	cardinals[0].y = pos.y - 1;

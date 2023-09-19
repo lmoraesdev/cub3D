@@ -19,6 +19,17 @@ t_queue	*queue_create(void)
 	return (queue);
 }
 
+/**
+ * The function `queue_destroy` is used to free the memory allocated for a queue
+ * and all its elements.
+ *
+ * @param queue The parameter "queue" is a pointer to a structure of type
+ * "t_queue".
+ *
+ * @return In the given code, if the `queue` parameter is `NULL`, the function will
+ * return without performing any further actions. If the `queue` parameter is not
+ * `NULL`, the function will free the memory allocated for the queue and return.
+ */
 void	queue_destroy(t_queue *queue)
 {
 	if (!queue)
@@ -73,7 +84,7 @@ void	queue_push(t_queue *queue, char *value)
  *
  * @return In the given code, the function `queue_pop` does not explicitly return
  * any value. Instead, it uses the `return;` statement to exit the function early
- * if certain conditions are met. Therefore, the function does not return 
+ * if certain conditions are met. Therefore, the function does not return
  * anything.
  */
 void	queue_pop(t_queue *queue)
