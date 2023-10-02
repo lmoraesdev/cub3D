@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   queue.c                                            :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: mvavasso <mvavasso@student.42sp.org.br>    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2023/10/02 20:17:49 by mvavasso          #+#    #+#             */
+/*   Updated: 2023/10/02 20:17:50 by mvavasso         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "../inc/queue.h"
 
 /**
@@ -26,9 +38,10 @@ t_queue	*queue_create(void)
  * @param queue The parameter "queue" is a pointer to a structure of type
  * "t_queue".
  *
- * @return In the given code, if the `queue` parameter is `NULL`, the function will
- * return without performing any further actions. If the `queue` parameter is not
- * `NULL`, the function will free the memory allocated for the queue and return.
+ * @return In the given code, if the `queue` parameter is `NULL`, the function 
+ * will return without performing any further actions. If the `queue` parameter
+ * is not `NULL`, the function will free the memory allocated for the queue and 
+ * return.
  */
 void	queue_destroy(t_queue *queue)
 {

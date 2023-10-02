@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   format_map.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: mvavasso <mvavasso@student.42sp.org.br>    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2023/10/02 20:12:32 by mvavasso          #+#    #+#             */
+/*   Updated: 2023/10/02 20:12:33 by mvavasso         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "../inc/cub3D.h"
 
 /**
@@ -6,8 +18,8 @@
  *
  * @param map_file A pointer to a structure of type t_map_file, which contains
  * information about a map file. The structure likely includes a 2D matrix (map)
- * represented as a char array, as well as the player's current position on the map
- * (player_x and player_y).
+ * represented as a char array, as well as the player's current position on the 
+ * map (player_x and player_y).
  */
 void	format_map(t_map_file *map_file)
 {

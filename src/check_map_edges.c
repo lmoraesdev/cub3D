@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   check_map_edges.c                                  :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: mvavasso <mvavasso@student.42sp.org.br>    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2023/10/02 20:11:00 by mvavasso          #+#    #+#             */
+/*   Updated: 2023/10/02 20:11:02 by mvavasso         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "../inc/cub3D.h"
 
 static void	set_start_point(t_map_file *map_file, t_coor *start);
@@ -114,9 +126,9 @@ static int	is_closed(
  *
  * @param cardinals An array of t_coor structures representing the cardinal
  * directions (north, west, south, east).
- * @param pos The parameter "pos" is a structure of type "t_coor" that represents a
- * position. It has two members: "y" and "x", which represent the y-coordinate and
- * x-coordinate of the position, respectively.
+ * @param pos The parameter "pos" is a structure of type "t_coor" that represents
+ * a position. It has two members: "y" and "x", which represent the y-coordinate
+ * and x-coordinate of the position, respectively.
  */
 static void	set_cardinals(t_coor cardinals[4], t_coor pos)
 {
