@@ -44,7 +44,7 @@ Para compilar e executar o `cub3D`, siga os passos abaixo:
 - maps/ - Exemplos de arquivos de mapas no formato .cub, que definem a disposição dos elementos no jogo.
 - include/ - Arquivos de cabeçalho do projeto, contendo declarações de funções e definições de estruturas.
 ## Motivação
-    Este projeto foi desenvolvido como parte do currículo da 42 São Paulo para demonstrar proficiência em:
+   Este projeto foi desenvolvido como parte do currículo da 42 São Paulo para demonstrar proficiência em:
 
 - Programação em C
 - Manipulação de gráficos e algoritmos de renderização
